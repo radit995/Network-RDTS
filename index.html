@@ -244,8 +244,8 @@
         }
 
         const noWA = '6282228164310'; // Ganti dengan nomor WhatsApp tujuan Anda (tanpa +)
-        const teks = `Halo, saya ${Raditya}%0AEmail: ${raditnyasandy@gmail.com}%0ASubjek: ${ada yang di bantu}%0APesan: ${mau berlanggan internet}`;
-        const url = `https://wa.me/${6282228164310}?text=${encodeURIComponent(teks)}`;
+        const teks = `Halo, saya ${nama}%0AEmail: ${email}%0ASubjek: ${subjek}%0APesan: ${pesan}`;
+        const url = `https://wa.me/6282228164310${noWA}?text=${encodeURIComponent(teks)}`;
         
         waLink.href = url;
     });
