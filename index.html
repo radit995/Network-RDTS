@@ -3,106 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kelas MPI B - Beranda</title>
+  <title>Edukasi ISP & Jaringan - Network RDTS</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="nav-container">
-      <!-- Logo -->
-      <a class="logo">Kelas MPI B</a>
 
-      <!-- Tombol hamburger (mobile) -->
-      <button class="menu-toggle" id="menuToggle">☰</button>
-
-      <!-- Menu desktop -->
-      <nav class="nav-links">
-        <a href="index.html">Beranda</a>
-        <a href="tentang.html">Tentang Kami</a>
-        <a href="makalah.html">Kumpulan Makalah</a>
-        <a href="kontak.html">Kontak</a>
-        <a href="login.html" id="login-btn-desktop">Login</a>
-        <a href="#" id="logout-btn-desktop" class="cta-button" style="display:none;">Logout</a>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="#home" class="logo">
+        <img src="jaringanwifi.jpg" alt="Logo Jaringan" width="40" height="40">
+        <span>Network RDTS</span>
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Apa itu ISP?</a></li>
+          <li><a href="#services">Jenis Koneksi</a></li>
+          <li><a href="#benefits">Manfaat</a></li>
+          <li><a href="#coverage">Cakupan</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
       </nav>
-    </div>
-
-    <!-- Menu mobile -->
-    <div class="mobile-nav" id="mobileNav">
-      <a href="index.html">Beranda</a>
-      <a href="tentang.html">Tentang Kami</a>
-      <a href="makalah.html">Kumpulan Makalah</a>
-      <a href="kontak.html">Kontak</a>
-      <a href="login.html" id="login-btn-mobile">Login</a>
-      <a href="#" class="cta-button" id="logout-btn-mobile" style="display:none;">Logout</a>
     </div>
   </header>
 
-  <!-- Konten utama -->
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Selamat Datang Di Kelas MPI B</h1>
-        <p>Website resmi kelas MPI B untuk berbagi profil & makalah mahasiswa.</p>
-        <a href="makalah.html" class="cta-button">Lihat Makalah</a>
-      </div>
-    </section>
+  <!-- Hero -->
+  <section id="home" class="hero fade-in">
+    <div class="container hero-content">
+      <h1>Belajar Dunia Internet & ISP</h1>
+      <p>Pahami cara kerja internet, jenis koneksi, dan manfaat ISP dalam era digital modern.</p>
+      <a href="#about" class="btn primary-btn">Pelajari ISP</a>
+      <a href="#services" class="btn secondary-btn">Jenis Koneksi</a>
+    </div>
+  </section>
 
-    <!-- Info Singkat -->
-    <section class="about">
-      <h2>Informasi Singkat</h2>
-      <div class="about-content">
-        <img src="data6.jpg" alt="Kelas MPI (B)">
-        <p>
-          Kelas MPI (B) adalah kelas Manajemen Pendidikan Islam yang aktif dalam kegiatan akademik 
-          dan karya tulis ilmiah. Kami berfokus pada pengembangan ilmu pengetahuan serta praktik 
-          manajerial dalam dunia pendidikan Islam.
-        </p>
-      </div>
-      <div class="about-extra">
-        <p>
-          Selain kegiatan akademik, kelas ini juga aktif dalam diskusi ilmiah, pembuatan makalah, 
-          dan penelitian. Tujuan kami adalah membentuk generasi yang unggul dalam ilmu, berakhlak 
-          mulia, dan berkontribusi untuk masyarakat.
-        </p>
-      </div>
-    </section>
+  <!-- About -->
+  <section id="about" class="fade-in">
+    <div class="container">
+      <h2 class="section-heading">Apa Itu ISP?</h2>
+      <p><strong>ISP (Internet Service Provider)</strong> adalah penyedia layanan internet untuk individu, bisnis, maupun organisasi. Teknologi yang digunakan meliputi fiber optik, DSL, satelit, hingga jaringan seluler.</p>
+      <a href="https://id.wikipedia.org/wiki/Penyedia_jasa_Internet" target="_blank" class="btn primary-btn">Baca Selengkapnya</a>
+    </div>
+  </section>
 
-    <!-- Struktur Kelas -->
-    <section class="struktur">
-      <h2>STRUKTUR KELAS</h2>
-      <div class="struktur-container">
-        <div class="struktur-box">
-          <img src="data5.jpg" alt="Struktur Kelas">
-          <h3>Semua Anggota Struktur</h3>
-          <p>Seluruh anggota struktur kelas bekerja sama dalam mengatur, mengelola, serta melaksanakan rancangan kegiatan kelas dengan baik.</p>
+  <!-- Services -->
+  <section id="services" class="fade-in">
+    <div class="container">
+      <h2 class="section-heading">Jenis Koneksi Internet</h2>
+      <div class="features-grid">
+        <div class="service-item">
+          <i class="fas fa-wifi"></i>
+          <h3>Wi-Fi</h3>
+          <p>Koneksi nirkabel untuk rumah, kantor, atau publik.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-broadcast-tower"></i>
+          <h3>4G / 5G</h3>
+          <p>Koneksi mobile cepat dan fleksibel dari provider seluler.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-satellite-dish"></i>
+          <h3>Satelit</h3>
+          <p>Solusi untuk wilayah terpencil dan sulit terjangkau.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-network-wired"></i>
+          <h3>Fiber & Kabel</h3>
+          <p>Koneksi stabil berkecepatan tinggi untuk segala kebutuhan.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Struktur MPI B -->
-    <section class="struktur">
-      <h2>STRUKTUR MPI B</h2>
-      <div class="struktur-flex">
-        <div class="struktur-img">
-          <img src="data4.jpg" alt="Struktur MPI B">
+  <!-- Benefits -->
+  <section id="benefits" class="fade-in">
+    <div class="container">
+      <h2 class="section-heading">Manfaat ISP</h2>
+      <div class="features-grid">
+        <div class="service-item">
+          <h3>Akses Global</h3>
+          <p>Akses informasi, berita, kursus, dan pengetahuan tanpa batas.</p>
         </div>
-        <div class="struktur-text">
-          <h3>Anggota Struktur</h3>
-          <p>
-            Struktur kelas MPI B terdiri dari seluruh anggota yang berperan dalam mengelola kegiatan, 
-            mengatur jalannya kelas, serta menjaga keharmonisan dalam belajar. 
-            Semua anggota bekerja sama untuk menciptakan lingkungan akademik yang aktif, 
-            kreatif, dan berkontribusi positif.
-          </p>
+        <div class="service-item">
+          <h3>Koneksi Stabil</h3>
+          <p>Belajar online, rapat virtual, dan e-commerce lebih lancar.</p>
+        </div>
+        <div class="service-item">
+          <h3>Komunikasi Mudah</h3>
+          <p>Email, chat, media sosial, hingga video call kapanpun.</p>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- Coverage -->
+  <section id="coverage" class="fade-in">
+    <div class="container">
+      <h2 class="section-heading">Cakupan Jaringan</h2>
+      <img src="maps1.png" alt="Peta Jaringan Indonesia" style="max-width:100%; border-radius:12px;">
+      <p><small>Daerah perkotaan umumnya memiliki akses lebih cepat dibanding pedesaan.</small></p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in">
+    <div class="container">
+      <h2 class="section-heading">Hubungi Kami</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Jl. Halim Perdana Kusuma, Indonesia</p>
+          <p><i class="fas fa-phone"></i> 0822-2816-4310</p>
+          <p><i class="fas fa-envelope"></i> info@networkrdts.com</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Nama Lengkap" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" rows="6" placeholder="Pesan Anda" required></textarea>
+            <button type="submit" class="btn primary-btn">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Kelas MPI (B). Semua Hak Dilindungi.</p>
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Tautan</h4>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Sosial</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Network RDTS. All rights reserved.
+    </div>
   </footer>
 
   <script src="script.js"></script>
